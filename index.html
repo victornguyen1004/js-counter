@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body class="font-['Roboto'] bg-zinc-50 w-screen h-screen flex justify-center items-center">
+    <div class="bg-white w-[500px] h-[300px] shadow-lg rounded-lg overflow-hidden flex flex-col">
+        <div class="w-full h-[50px] bg-white rounded-md shadow-md flex items-center justify-center text-2xl font-bold text-[#1cbad6]">Number Counter</div>
+        <div class="w-full h-full flex flex-col justify-center items-center bg-slate-200">
+            <div id="current-value" class="shadow-inner text-7xl w-32 h-24 flex justify-center items-center mb-8 rounded-xl bg-white"></div>
+            <div class="">
+                <button id="decrease" class="p-2 bg-white hover:bg-red-500 border-red-500 shadow-md rounded-2xl text-red-500 hover:text-white px-6 text-lg font-medium hover:shadow-red-400 border-2 transition ease-in-out delay-50" >Decrease</button>
+                <button id="reset" class="p-2 bg-white hover:bg-zinc-500 border-zinc-500 shadow-md rounded-2xl text-zinc-500 hover:text-white px-6 text-lg mx-8 font-medium hover:shadow-zinc-400 border-2 transition ease-in-out delay-50" >Reset</button>
+                <button id="increase" class="p-2 bg-white hover:bg-green-500 border-green-500 shadow-md rounded-2xl text-green-500 hover:text-white px-6 text-lg font-medium hover:shadow-green-400 border-2 transition ease-in-out delay-50" >Increase</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./scripts.js"></script>
+</html>
